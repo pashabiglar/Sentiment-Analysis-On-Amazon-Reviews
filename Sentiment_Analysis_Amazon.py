@@ -37,9 +37,8 @@ from sklearn.naive_bayes import MultinomialNB
 # In[199]:
 
 
-#data.tsv
-#https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Jewelry_v1_00.tsv.gz, compression='gzip'
-df = pd.read_csv('data.tsv', sep='\t', usecols=['star_rating', 'review_body'])
+#NOTE: You will potentially have to download the data locally and unzip.
+df = pd.read_csv('https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Jewelry_v1_00.tsv.gz', compression='gzip', sep='\t', usecols=['star_rating', 'review_body'])
 
 
 # ## Keep Reviews and Ratings
