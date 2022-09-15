@@ -445,10 +445,3 @@ macro_avg = precision_recall_fscore_support(Y_test, Y_predicted, average='macro'
 
 print('\nNaive Bayes Results:\n')
 print_results(precision, recall, fscore)
-
-
-# In[ ]:
-
-
-
-
